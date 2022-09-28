@@ -5,6 +5,8 @@ import org.openqa.selenium.WebDriver;
 public class PageFactory {
     WebDriver driver;
     private RegisterUser register;
+    private ComparePage comparison;
+    private MyAccountPage myAccount;
 
     public PageFactory(WebDriver driver) {
         this.driver = driver;
@@ -16,5 +18,16 @@ public class PageFactory {
         }
         return register;
     }
-
+    public ComparePage getComparePage() {
+        if (comparison == null) {
+            comparison = new ComparePage(driver);
+        }
+        return comparison;
+    }
+    public MyAccountPage getMyAccountPage() {
+        if (myAccount == null) {
+            myAccount = new MyAccountPage(driver);
+        }
+        return myAccount;
+    }
 }
