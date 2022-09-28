@@ -10,7 +10,6 @@ Feature: HomePage functionalities
     When User clicks on compare button on 2 products and navigates to compare page
     Then User can Compare products
 
-
   Scenario: Edit User account details
     Given User is on Homepage
     When User clicks on my account button and edits details and clicks save button

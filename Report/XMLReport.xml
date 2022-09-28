@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="14.193">
-    <testcase classname="HomePage functionalities" name="Successfully register with valid details and logout" time="7.069">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="27.097">
+    <testcase classname="HomePage functionalities" name="Successfully register with valid details and logout" time="8.874">
         <system-out><![CDATA[Given User is on Homepage...................................................passed
 When User navigates to register page and enters valid details and clicks on register button.passed
 Then User is registered.....................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="HomePage functionalities" name="Add and Compare two products in comparison page" time="6.876">
+    <testcase classname="HomePage functionalities" name="Add and Compare two products in comparison page" time="10.462">
         <system-out><![CDATA[Given User is on Homepage...................................................passed
 When User clicks on compare button on 2 products and navigates to compare page.passed
 Then User can Compare products..............................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="HomePage functionalities" name="Edit User account details" time="7.438">
+        <system-out><![CDATA[Given User is on Homepage...................................................passed
+When User clicks on my account button and edits details and clicks save button.passed
+Then User details are saved.................................................passed
 ]]></system-out>
     </testcase>
 </testsuite>

@@ -17,7 +17,7 @@ public class MyAccountPage {
     By login = By.xpath("//a[contains(text(),'Log in')]");
     By emailid = By.xpath("//input[@name='Email']");
     By password = By.xpath("//input[@name='Password']");
-    By loginButton = By.xpath("//button[contains(@class,'login')]");
+    By loginButton = By.xpath("//button[contains(@class, 'login-button')]");
     By myAccount = By.xpath("//a[contains(@class,'account')]");
     By lastName = By.xpath("//input[@name='LastName']");
     By saveButton = By.xpath("//button[contains(@class,'save')]");
@@ -29,7 +29,7 @@ public class MyAccountPage {
     }
 
     public void editDetails() throws IOException {
-        String path = System.getProperty("user.dir") + "//src//test//java//TestData//demonop.xlsx";
+        String path = System.getProperty("user.dir") + "//src//test//java//TestData//DemoNopRegister.xlsx";
         FileInputStream prop1 = null;
         try {
             prop1 = new FileInputStream(path);
