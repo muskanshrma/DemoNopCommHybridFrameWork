@@ -14,3 +14,8 @@ Feature: HomePage functionalities
     Given User is on Homepage
     When User clicks on my account button and edits details and clicks save button
     Then User details are saved
+
+  Scenario: Add product to cart and checkout
+    Given User is on Homepage
+    When user logs in and add product to cart and checkout
+    Then Order is placed successfully
