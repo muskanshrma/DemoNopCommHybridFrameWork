@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="10.67">
-    <testcase classname="Register" name="Successfully register with valid details and logout" time="10.411">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="14.193">
+    <testcase classname="HomePage functionalities" name="Successfully register with valid details and logout" time="7.069">
         <system-out><![CDATA[Given User is on Homepage...................................................passed
 When User navigates to register page and enters valid details and clicks on register button.passed
 Then User is registered.....................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="HomePage functionalities" name="Add and Compare two products in comparison page" time="6.876">
+        <system-out><![CDATA[Given User is on Homepage...................................................passed
+When User clicks on compare button on 2 products and navigates to compare page.passed
+Then User can Compare products..............................................passed
 ]]></system-out>
     </testcase>
 </testsuite>
