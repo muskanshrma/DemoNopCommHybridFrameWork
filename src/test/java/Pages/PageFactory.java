@@ -6,6 +6,7 @@ public class PageFactory {
     WebDriver driver;
     private RegisterUser register;
     private ComparePage comparison;
+    private MyAccountPage myAccount;
 
     public PageFactory(WebDriver driver) {
         this.driver = driver;
@@ -23,5 +24,10 @@ public class PageFactory {
         }
         return comparison;
     }
-
+    public MyAccountPage getMyAccountPage() {
+        if (myAccount == null) {
+            myAccount = new MyAccountPage(driver);
+        }
+        return myAccount;
+    }
 }

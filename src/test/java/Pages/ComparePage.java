@@ -7,7 +7,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -62,6 +61,6 @@ public class ComparePage {
 
     public void verifyComparison() throws IOException {
         boolean isResultDisplayed = driver.findElement(comparisonPageVerification).isDisplayed();
-        org.testng.Assert.assertTrue(isResultDisplayed, "Registration error");
+        org.testng.Assert.assertTrue(isResultDisplayed, "Comparison error");
     }
 }
