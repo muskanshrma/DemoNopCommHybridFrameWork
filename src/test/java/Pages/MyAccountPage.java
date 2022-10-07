@@ -15,7 +15,7 @@ public class MyAccountPage {
     WebDriver driver;
     WebDriverWait wait;
     By login = By.xpath("//a[contains(text(),'Log in')]");
-    By emailid = By.xpath("//input[@name='Email']");
+    By emailId = By.xpath("//input[@name='Email']");
     By password = By.xpath("//input[@name='Password']");
     By loginButton = By.xpath("//button[contains(@class, 'login-button')]");
     By myAccount = By.xpath("//a[contains(@class,'account')]");
@@ -42,7 +42,7 @@ public class MyAccountPage {
         String pass = sheet.getRow(1).getCell(3).getStringCellValue();
         String newLastName = sheet.getRow(1).getCell(1).getStringCellValue();
         driver.findElement(login).click();
-        driver.findElement(emailid).sendKeys(email);
+        driver.findElement(emailId).sendKeys(email);
         driver.findElement(password).sendKeys(pass);
         driver.findElement(loginButton).click();
         driver.findElement(myAccount).click();
@@ -53,7 +53,7 @@ public class MyAccountPage {
     }
     public void verifyEdit() throws IOException {
         boolean isResultDisplayed = driver.findElement(logoutButton).isDisplayed();
-        org.testng.Assert.assertTrue(isResultDisplayed, "Comparison error");
+        org.testng.Assert.assertTrue(isResultDisplayed, "Update details error");
         driver.findElement(logoutButton).click();
     }
 }

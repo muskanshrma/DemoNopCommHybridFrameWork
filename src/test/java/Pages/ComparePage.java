@@ -17,7 +17,7 @@ public class ComparePage {
     WebDriverWait wait;
 
     By login = By.xpath("//a[contains(text(),'Log in')]");
-    By emailid = By.xpath("//input[@name='Email']");
+    By emailId = By.xpath("//input[@name='Email']");
     By password = By.xpath("//input[@name='Password']");
     By loginButton = By.xpath("//button[contains(@class, 'login-button')]");
     By computers = (By.xpath("(//a[contains(text(), 'Computers')])[1]"));
@@ -46,7 +46,7 @@ public class ComparePage {
         String pass = sheet.getRow(1).getCell(3).getStringCellValue();
 
         driver.findElement(login).click();
-        driver.findElement(emailid).sendKeys(email);
+        driver.findElement(emailId).sendKeys(email);
         driver.findElement(password).sendKeys(pass);
         driver.findElement(loginButton).click();
         driver.findElement(computers).click();

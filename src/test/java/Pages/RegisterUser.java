@@ -44,7 +44,6 @@ public class RegisterUser {
         String lName = sheet.getRow(1).getCell(1).getStringCellValue();
         String email = sheet.getRow(1).getCell(2).getStringCellValue();
         String pass = sheet.getRow(1).getCell(3).getStringCellValue();
-
         driver.findElement(registerTab).click();
         driver.findElement(firstName).sendKeys(fName);
         driver.findElement(lastName).sendKeys(lName);

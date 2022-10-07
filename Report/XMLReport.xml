@@ -1,27 +1,37 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="31.639">
-    <testcase classname="HomePage functionalities" name="Successfully register with valid details and logout" time="7.722">
-        <system-out><![CDATA[Given User is on Homepage...................................................passed
-When User navigates to register page and enters valid details and clicks on register button.passed
-Then User is registered.....................................................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="HomePage functionalities" name="Add and Compare two products in comparison page" time="7.821">
-        <system-out><![CDATA[Given User is on Homepage...................................................passed
-When User clicks on compare button on 2 products and navigates to compare page.passed
-Then User can Compare products..............................................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="HomePage functionalities" name="Edit User account details" time="9.233">
-        <system-out><![CDATA[Given User is on Homepage...................................................passed
-When User clicks on my account button and edits details and clicks save button.passed
-Then User details are saved.................................................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="HomePage functionalities" name="Add product to cart and checkout" time="6.479">
-        <system-out><![CDATA[Given User is on Homepage...................................................passed
-When user logs in and add product to cart and checkout......................passed
-Then Order is placed successfully...........................................passed
-]]></system-out>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="18.059">
+    <testcase classname="HomePage functionalities" name="Add product to cart and checkout" time="17.812">
+        <failure message="element not interactable&#10;  (Session info: chrome=105.0.5195.127)&#10;Build info: version: '4.1.0', revision: '87802e897b'&#10;System info: host: 'MSDT070', ip: '10.20.20.181', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [ddd14d9ab709bdcc5550652433057a3e, clickElement {id=6004b93b-c1c3-478a-a3ce-0c1d31c60a55}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\MUSKAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61786}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61786/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (ddd14d9ab709bdcc5550652433057a3e)] -&gt; xpath: //select[@name='BillingNewAddress.CountryId']]&#10;Session ID: ddd14d9ab709bdcc5550652433057a3e" type="org.openqa.selenium.ElementNotInteractableException"><![CDATA[Given User is on Homepage...................................................passed
+When user logs in and add product to cart and checkout......................failed
+Then Order is placed successfully...........................................skipped
+
+StackTrace:
+org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=105.0.5195.127)
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'MSDT070', ip: '10.20.20.181', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ddd14d9ab709bdcc5550652433057a3e, clickElement {id=6004b93b-c1c3-478a-a3ce-0c1d31c60a55}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\MUSKAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61786}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61786/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (ddd14d9ab709bdcc5550652433057a3e)] -> xpath: //select[@name='BillingNewAddress.CountryId']]
+Session ID: ddd14d9ab709bdcc5550652433057a3e
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at Pages.AddToCartAndCheckout.addToCart(AddToCartAndCheckout.java:84)
+	at StepDefinition.CheckoutStepDefinition.addProductToCart(CheckoutStepDefinition.java:11)
+	at ✽.user logs in and add product to cart and checkout(file:///C:/Users/MuskanSharma/IdeaProjects/DemoNopHybrid/src/test/java/FeatureFiles/tc01.feature:20)
+]]></failure>
     </testcase>
 </testsuite>
